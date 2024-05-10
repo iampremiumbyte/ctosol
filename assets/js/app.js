@@ -1,4 +1,17 @@
 
+const enter = document.getElementById("enter");
+const overlay = document.getElementById("overlay");
+const video = document.getElementById("video");
+
+
+window.addEventListener("load", () => {
+    enter.addEventListener("click", () => {
+        overlay.style.display = "none";
+        video.play();
+    })
+})
+
+
 const styleBoxes = () => {
 
     Array(4).fill(0).forEach((_, i) => {
